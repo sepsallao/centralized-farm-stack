@@ -1,6 +1,6 @@
 .main-content {
   background-color: peachpuff;
-  padding: 50px 50px;
+  padding: 5% 30%;
   min-height: 100vh;
 }
 @media (max-width: 700px) {
