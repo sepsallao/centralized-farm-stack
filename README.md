@@ -1,2 +1,20 @@
-# centralized-farm-stack
-Centralized Web App for any company
+# Project Name: The Centralized
+
+## A collaboration of:
+###### 1. Regor Esconde
+###### 2. Joseph Sallao Jr.
+
+## 
+
+## Overview
+###### This Project aims to be as Web Application portfolio for the developers of this system.
+###### This Project uses FARM Stack:
+    1. Fast API
+    2. ReactJS
+    3. MongoDB
+
+###### With:
+    1. Docker
+    2. ???
+
+##
