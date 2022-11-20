@@ -2,7 +2,7 @@ version: '3'
 services:
   mongo:
     image: mongo:latest
-    contater_name: mongo
+    # contater_name: mongo
     env_file:
       - ./.env
     environment:
