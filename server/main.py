@@ -17,20 +17,30 @@ app.add_middleware(
     allow_headers = ["*"],
 )
 
-@app.get("/")
-def read_root():
-    return {"Ping":"Pong"}
+# @app.get("/")
+# def read_root():
+#     return {"Ping":"Pong"}
 
 @app.get("/api/health-checker")
 def health_checker():
     return {"message": "Welcome to FastAPI with MongoDB"}
-    # Run the command
-    # example:
-    #   $ uvicorn app.main:app --host localhost --port 8000 --reload
-    # actual:
-    #   $ uvicorn manage:app --host localhost --port 8000 --reload
 
-# @app.get("/api")
-# def api():
-#     return {"message": "hello"}
-#     # return JSONResponse({"message": "hello"})
+@app.get("/api/todo")
+async def get_todo():
+    return 1
+    
+@app.get("/api/todo{id}")
+async def get_todo_by_id(id):
+    return 1 
+
+@app.post("/api/todo")
+async def post_todo(todo):
+    return 1
+
+@app.put("/api/todo{id}")
+async def put_todo(id, data):
+    return 1
+
+@app.delete("/api/todo{id}")
+async def delete_todo(id):
+    return 1

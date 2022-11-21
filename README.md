@@ -18,3 +18,13 @@
     2. ???
 
 ##
+
+
+## Server
+###### To Run:
+`$ uvicorn server.main:app --reload`
+
+###### To check the Swagger UI, go to:
+`http://localhost:8000/docs/`
+
+##
