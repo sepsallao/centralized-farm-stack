@@ -1,5 +1,5 @@
 import React from "react";
-import { Button, Card, Container, Form } from "react-bootstrap";
+import { Button, Card, Container, FloatingLabel, Form } from "react-bootstrap";
 import "./Login.css";
 
 export default function Login() {
@@ -17,16 +17,20 @@ export default function Login() {
         <Card.Body style={{ padding: "25px 30px" }}>
           <Form style={{ padding: "5px 30px" }}>
             <Form.Group className="mb-3">
-              <Form.Label visuallyHidden="true">Email Address</Form.Label>
-              <Form.Control type="email" placeholder="Email" />
+              <FloatingLabel label="Email address">
+                <Form.Label visuallyHidden="true">Email Address</Form.Label>
+                <Form.Control type="email" placeholder="Email" />
+              </FloatingLabel>
               <Form.Text className="text-muted">
                 We'll never share your email with anyone else.
               </Form.Text>
             </Form.Group>
 
             <Form.Group className="mb-3">
-              <Form.Label visuallyHidden="true">Password</Form.Label>
-              <Form.Control type="Password" placeholder="Password" />
+              <FloatingLabel label="Password">
+                <Form.Label visuallyHidden="true">Password</Form.Label>
+                <Form.Control type="Password" placeholder="Password" />
+              </FloatingLabel>
             </Form.Group>
             <Form.Group className="mb-3">
               <Form.Check type="checkbox" label="Remember me?" />
