@@ -5,17 +5,25 @@ import "./Login.css";
 export default function Login() {
   return (
     <Container className="login-card" fluid>
-      <Card>
+      <Card className="card-size">
         <Card.Img
           variant="top"
-          src="https://via.placeholder.com/500x60?text=Featured+Image"
+          src="https://via.placeholder.com/500x75?text=Featured+Banner"
         />
         <Card.Header>
-          {" "}
+          <img
+            src="https://via.placeholder.com/300x75?text=Logo"
+            style={{
+              margin: "10px auto",
+              width: "50%",
+              display: "block",
+            }}
+            alt=""
+          />
           <h3 style={{ textAlign: "center" }}>Welcome to Information System</h3>
         </Card.Header>
-        <Card.Body style={{ padding: "25px 30px" }}>
-          <Form style={{ padding: "5px 30px" }}>
+        <Card.Body className="card-body">
+          <Form className="form-body">
             <Form.Group className="mb-3">
               <FloatingLabel label="Email address">
                 <Form.Label visuallyHidden="true">Email Address</Form.Label>

@@ -1,12 +1,11 @@
 .main-content {
   background-color: peachpuff;
-  padding: 5% 30%;
   min-height: 100vh;
+  width: 100%;
 }
 @media (max-width: 700px) {
   .main-content {
     background-color: peachpuff;
-    padding: 10px 20px;
     min-height: 100vh;
   }
 }
