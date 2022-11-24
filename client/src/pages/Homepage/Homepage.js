@@ -10,7 +10,12 @@ export default function Homepage() {
     <div className="searchbar">
       <img
         src="https://via.placeholder.com/500x75?text=Logo+Banner"
-        style={{ margin: "20px auto", display: "block" }}
+        style={{
+          margin: "20px auto",
+          display: "block",
+          width: "100%",
+        }}
+        alt=""
       />
       <Search
         placeholder="Search a keyword"
