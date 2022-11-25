@@ -1,6 +1,8 @@
 import React from "react";
 import { Button, Card, Container, FloatingLabel, Form } from "react-bootstrap";
 import "./Login.css";
+import { GoogleOAuthProvider } from "@react-oauth/google";
+import { GoogleLogin } from "@react-oauth/google";
 
 export default function Login() {
   return (
@@ -12,12 +14,8 @@ export default function Login() {
         />
         <Card.Header>
           <img
+            className="logo-title"
             src="https://via.placeholder.com/300x75?text=Logo"
-            style={{
-              margin: "10px auto",
-              width: "50%",
-              display: "block",
-            }}
             alt=""
           />
           <h3 style={{ textAlign: "center" }}>Welcome to Information System</h3>
@@ -44,9 +42,24 @@ export default function Login() {
               <Form.Check type="checkbox" label="Remember me?" />
             </Form.Group>
             <div className="text-center">
-              <Button variant="primary" type="submit">
+              <Button
+                variant="primary"
+                type="submit"
+                style={{ width: "100%", marginBottom: "10px" }}
+              >
                 Login
               </Button>
+              <GoogleOAuthProvider clientId="<your_client_id>">
+                <GoogleLogin
+                  onSuccess={(credentialResponse) => {
+                    console.log(credentialResponse);
+                  }}
+                  onError={() => {
+                    console.log("Login Failed");
+                  }}
+                  useOneTap
+                />
+              </GoogleOAuthProvider>
             </div>
           </Form>
         </Card.Body>
