@@ -1,6 +1,6 @@
 import React from "react";
 import "./Homepage.css";
-import { Input } from "antd";
+import { Input, ConfigProvider } from "antd";
 
 const { Search } = Input;
 
@@ -17,13 +17,21 @@ export default function Homepage() {
         }}
         alt=""
       />
-      <Search
-        placeholder="Search a keyword"
-        enterButton="Search"
-        size="large"
-        allowClear
-        onSearch={onSearch}
-      />
+      <ConfigProvider
+        theme={{
+          token: {
+            colorPrimary: "#566246",
+          },
+        }}
+      >
+        <Search
+          placeholder="Search a keyword"
+          enterButton="Search"
+          size="large"
+          allowClear
+          onSearch={onSearch}
+        />
+      </ConfigProvider>
     </div>
   );
 }
