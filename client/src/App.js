@@ -1,10 +1,11 @@
 import "./App.css";
 import Layout from "./components/Layout/Layout";
+import Layout2 from "./components/Layout/Layout2";
 
 function App() {
   return (
     <div>
-      <Layout />
+      <Layout2 />
     </div>
   );
 }

@@ -16,6 +16,7 @@ export default function Layout() {
         </Col>
       </Row>
       <Row className="main-content">
+        <Col style={{ maxWidth: "75px", backgroundColor: "red" }}></Col>
         <Col>
           <MyRoutes />
         </Col>
