@@ -1,6 +1,5 @@
 import React from "react";
 import { Button, Card, Container, FloatingLabel, Form } from "react-bootstrap";
-import "./Login.css";
 import { GoogleOAuthProvider } from "@react-oauth/google";
 import { GoogleLogin } from "@react-oauth/google";
 

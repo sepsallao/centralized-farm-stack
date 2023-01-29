@@ -1,6 +1,5 @@
 import React from "react";
 import MyRoutes from "../MyRoutes/MyRoutes";
-import "./Layout.css";
 import Sidebar from "../Sidebar/Sidebar";
 import HeaderNavbar from "../HeaderNavbar/HeaderNavbar";
 export default function Layout2() {

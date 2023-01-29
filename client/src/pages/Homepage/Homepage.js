@@ -1,5 +1,4 @@
 import React from "react";
-import "./Homepage.css";
 import { Input, ConfigProvider } from "antd";
 
 const { Search } = Input;
