@@ -6,20 +6,16 @@ const { Search } = Input;
 export default function Homepage() {
   const onSearch = (value) => console.log(value);
   return (
-    <div className="searchbar">
+    <div className=" md:m-20">
       <img
         src="https://via.placeholder.com/500x75?text=Logo+Banner"
-        style={{
-          margin: "20px auto",
-          display: "block",
-          width: "100%",
-        }}
+        className="mx-1 my-2 block rounded-md w-screen"
         alt=""
       />
       <ConfigProvider
         theme={{
           token: {
-            colorPrimary: "#566246",
+            colorPrimary: "#a4c2a5",
           },
         }}
       >

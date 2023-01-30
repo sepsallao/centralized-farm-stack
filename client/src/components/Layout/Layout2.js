@@ -1,16 +1,17 @@
 import React from "react";
 import MyRoutes from "../MyRoutes/MyRoutes";
-import Sidebar from "../Sidebar/Sidebar";
+// import Sidebar from "../Sidebar/Sidebar";
 import HeaderNavbar from "../HeaderNavbar/HeaderNavbar";
+import Sidebar2 from "../Sidebar/Sidebar2";
 export default function Layout2() {
   return (
     <div>
       <HeaderNavbar />
-      <div
-        style={{ display: "flex", flexDirection: "row", minHeight: "100vh" }}
-      >
-        <Sidebar />
-        <div className="main-content">
+      <div className="flex">
+        <div className="">
+          <Sidebar2 />
+        </div>
+        <div className="h-screen flex-1 p-7">
           <MyRoutes />
         </div>
       </div>

@@ -2,7 +2,7 @@ import React from "react";
 
 export default function HeaderNavbar() {
   return (
-    <div className="header">
+    <nav className="py-2 px-2 flex justify-between bg-[#A4C2A5]">
       <img
         className="header-logo"
         src="https://via.placeholder.com/270x75?text=Logo+Image"
@@ -12,6 +12,6 @@ export default function HeaderNavbar() {
         }}
         alt=""
       />
-    </div>
+    </nav>
   );
 }
